@@ -1,0 +1,4 @@
+**/build/
+**/.vscode/
+hello_world/
+led_pwm_zephyr/

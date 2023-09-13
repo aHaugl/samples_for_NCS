@@ -1,6 +1,6 @@
 Exercise 1 - Introduction to adding the pwm device
 
-## Step 1.1 - Enable logging
+### Step 1.1 - Enable logging
 Add the required configurations to prj.conf
 
 ## Step 1.2 - Add log support

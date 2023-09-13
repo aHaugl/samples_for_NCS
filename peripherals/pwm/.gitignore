@@ -2,3 +2,4 @@
 **/.vscode/
 hello_world/
 led_pwm_zephyr/
+blinky_pwm_zephyr/

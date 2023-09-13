@@ -12,6 +12,8 @@ In basic_LED_only the PWM signal will control the brightness, in basic_motor_con
 For basic_motor_control, we will separate out most of the PWM configuration and handling in a separate file, and implement simple functions to call from main.c. Other than this, the samples are identical in setup
 
 # Useful links in Nordic Semiconductors documentation
+* https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/build/dts/api/api.html#pwm
+* https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf
 
 # Using the driver
 

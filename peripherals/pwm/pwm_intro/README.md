@@ -33,5 +33,5 @@ Investigate device_is_ready to see how you can check if the device is busy https
 ## Step 3.3 . Set Set the led with the control signal generated from the PWM
 Use pwm_set_dt from step 3.1 to set the LED. Remember to check for error codes.
 
-## Step 4
+## Step 4 - Test your firmware
 Build and flash the firmware. LED 1 on the 52840DK should glow slightly. Try changing the pulse and/or period and observe the changes

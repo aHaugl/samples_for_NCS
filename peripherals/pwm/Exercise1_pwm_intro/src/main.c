@@ -15,7 +15,7 @@
 /* Step 3 - Create an initializing function to verify that the device is enabled*/ 
 int pwm_init(void){
         int err = 0;
-        LOG_INF("Initializing Motor Control");
+        LOG_INF("Initializing pwm");
 
         /* Step 3.2 - Check if the device is ready */
 

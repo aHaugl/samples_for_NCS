@@ -45,5 +45,5 @@ void main(void)
         LOG_INF("Starting PWM basic sample \n");
         /* Step 3.3 - Call the initialization function */
         pwm_init();
-
+        
 }

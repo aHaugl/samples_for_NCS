@@ -1,7 +1,7 @@
 # Pulse Width Modulation
 Pulse Width Modulation (PWM) is a useful technique to use digital control to create square waves, a signal switching from on and off, to control for instance a LED or a motor. The square wave generated can only be high or low at a given time, and by controlling the signals frequency and in turn the period of the signal, we can use this to set the "duty cycle" of the signal.
 
- The PWM module works  that it is a counter counting from 0 up to a PWM period. It starts with the PWM pin being high, and when it reaches a certain value called the PWM duty cycle the PWM signal will go low. When the counter reaches PWM period, the PWM pin will reset to high. See the figure from our servo motor specification:
+ The PWM module works as a counter counting from 0 up to a PWM period. It starts with the PWM pin being high, and when it reaches a certain value called the PWM duty cycle the PWM signal will go low. When the counter reaches PWM period, the PWM pin will reset to high. See the figure from our servo motor specification:
 
 A duty cycle is used to define the relative time in percentage that the PWM signal is high versus when it is low over a time period. For instance, a 50% duty cycle spends equal amounts of time as a high signal and low signal. 
 

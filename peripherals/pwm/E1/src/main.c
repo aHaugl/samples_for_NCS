@@ -1,9 +1,6 @@
 #include <zephyr.h>
 /* Step 2.1 - Include the relevant headers for pwm*/
 
-#include <device.h>
-#include <drivers/pwm.h>
-
 /* Step 1.2 - Include logging and define log module */
 
 

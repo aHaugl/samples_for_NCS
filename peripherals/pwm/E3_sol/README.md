@@ -58,10 +58,9 @@ Do note that you may need to do some experimentation as what corresponds to mini
 ### Step 2.3 - Test your code 
 To main() add a loop and call set_motor_angle() with different duty cycles
 
-Do note that you may need to do some experimentation as what corresponds to minimum and maximum angle may vary from motor to motor. 
+Do note that you may need to do some experimentation as what corresponds to minimum and maximum angle may vary from motor to motor. I choose 
 
 Look into the datasheet of the motor and see what type of pins the coloured wires correspond to, and connect VCC to 5v, ground to ground and the PWM wire to the pin we defined in the overlay.
 
-
-## Step 3 - Add button features to change based on buttons
-
+## Step 3 - Optional - add button features to change based on buttons
+Add a button handler callback that changes the motor angle based on the buttons pressed. You will need to include CONFIG_DK=y, dk_buttons_and_leds.h, initialize the dk buttons and a callbackfunction that detects the button inputs.

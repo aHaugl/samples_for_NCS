@@ -26,12 +26,14 @@ int pwm_init(void)
     int err = 0;
     LOG_INF("Initializing Motor Control");
 
+/* Step 3.2 - Check if the device is ready */
     if (!device_is_ready(pwm_led0.dev)) {
     LOG_ERR("Error: PWM device %s is not ready",
             pwm_led0.dev->name);
     return -EBUSY;
 	}
-
+	
+/* Step 3.3 - Set period and pulse in nanoseconds and check for error*/
     err = pwm_set_dt(&pwm_led0, PWM_PERIOD_NS, PWM_DUTY_CYCLE);
     if (err) {
         LOG_ERR("pwm_set_dt returned %d", err);

@@ -19,12 +19,13 @@ int pwm_init(void){
 
         /* Step 3.3 - Set period and pulse in nanoseconds and check for error*/
 
+        return err
 }
 
-int main(void)
+void main(void)
 {
         LOG_INF("Starting PWM basic sample \n");
         /* Step 3.3 - Call the initialization function */
 
-        return 0;       
+
 }

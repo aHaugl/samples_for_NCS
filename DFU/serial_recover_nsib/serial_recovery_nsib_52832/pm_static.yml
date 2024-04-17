@@ -16,16 +16,16 @@ EMPTY_1:
   size: 0xe00
 app:
   address: 0x22200
-  end_address: 0x51000
+  end_address: 0x74000
   region: flash_primary
-  size: 0x2ee00
+  size: 0x51e00
 app_image:
   address: 0x22200
-  end_address: 0x51000
+  end_address: 0x74000
   orig_span: &id001
   - app
   region: flash_primary
-  size: 0x2ee00
+  size: 0x51e00
   span: *id001
 b0:
   address: 0x0
@@ -66,13 +66,13 @@ mcuboot_pad:
   size: 0x200
 mcuboot_primary:
   address: 0x22000
-  end_address: 0x51000
+  end_address: 0x74000
   orig_span: &id003
   - mcuboot_pad
   - app
   region: flash_primary
   sharers: 0x1
-  size: 0x2f000
+  size: zy
   span: *id003
 mcuboot_primary_app:
   address: 0x22200

@@ -1,7 +1,5 @@
-.. _SMP_BLE_DFU_feat_SPI:
+#MCUboot SMP Sample feat Bluetooth Low Energy, SPI and external flash
 
-MCUboot SMP Sample feat Bluetooth Low Energy, SPI and external flash
-********
 
 Overview
 ********

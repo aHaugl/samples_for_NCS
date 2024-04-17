@@ -29,11 +29,11 @@ Move build/zephyr/app\_update.bin and build/zephyr/net\_core\_app\_update.bin to
 
 Use the nRF Connect to connect to the DK:
 
-![App Connect](../../.images/nrf_connect_app_connect.png)
+![App Connect](../../../.images/nrf_connect_app_connect.png)
 
 Click the DFU button:
 
-![App DFU](../../.images/nrf_connect_app_dfu.png)
+![App DFU](../../../.images/nrf_connect_app_dfu.png)
 
 Then select app\_update.bin or net\_core\_app\_update.bin upload it using "Confirm Only".
 

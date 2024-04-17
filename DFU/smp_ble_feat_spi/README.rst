@@ -1,6 +1,3 @@
-#MCUboot SMP Sample feat Bluetooth Low Energy, SPI and external flash
-
-
 Overview
 ********
 

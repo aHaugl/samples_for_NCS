@@ -1,6 +1,6 @@
 .. _SMP_BLE_DFU_feat_SPI:
 
-SMP BLE DFU feat SPI for nRF52840DK
+# MCUboot SMP Sample feat Bluetooth Low Energy, SPI and external flash
 ###########
 
 Overview

@@ -1,0 +1,8 @@
+add_custom_target(mcuboot_shared_property_target)
+set_property(TARGET mcuboot_shared_property_target  PROPERTY KERNEL_HEX_NAME;zephyr.hex)
+set_property(TARGET mcuboot_shared_property_target  PROPERTY ZEPHYR_BINARY_DIR;C:/Nordic/SDKs/ncs/my_projects/samples_for_NCS/DFU/smp_ble_feat_spi/build_1/mcuboot/zephyr)
+set_property(TARGET mcuboot_shared_property_target  PROPERTY KERNEL_ELF_NAME;zephyr.elf)
+set_property(TARGET mcuboot_shared_property_target  PROPERTY BUILD_BYPRODUCTS;C:/Nordic/SDKs/ncs/my_projects/samples_for_NCS/DFU/smp_ble_feat_spi/build_1/mcuboot/zephyr/zephyr.hex;C:/Nordic/SDKs/ncs/my_projects/samples_for_NCS/DFU/smp_ble_feat_spi/build_1/mcuboot/zephyr/zephyr.elf)
+set_property(TARGET mcuboot_shared_property_target  PROPERTY SIGNATURE_KEY_FILE;root-ec-p256.pem)
+set_property(TARGET mcuboot_shared_property_target APPEND PROPERTY PM_YML_DEP_FILES;C:/Nordic/SDKs/ncs/v2.6.0/bootloader/mcuboot/boot/zephyr/pm.yml)
+set_property(TARGET mcuboot_shared_property_target APPEND PROPERTY PM_YML_FILES;C:/Nordic/SDKs/ncs/my_projects/samples_for_NCS/DFU/smp_ble_feat_spi/build_1/mcuboot/zephyr/include/generated/pm.yml)

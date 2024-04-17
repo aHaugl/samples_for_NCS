@@ -1,0 +1,25 @@
+{
+    "format-version": 0,
+    "time": 1713344357,
+    "files": [
+        {
+            "load_address": 66048,
+            "version_MCUBOOT": "0.0.0+0",
+            "type": "application",
+            "board": "nrf52840dk_nrf52840",
+            "soc": "nRF52840_QIAA",
+            "size": 159431,
+            "file": "app_update.bin",
+            "modtime": 1713344357
+        }
+    ],
+    "name": "smp_ble_feat_spi",
+    "firmware": {
+        "zephyr": {
+            "revision": "a9c56988c4c50626adb0e96252e400c99fd92332"
+        },
+        "nrf": {
+            "revision": "3190fa573ff67bfb745028f203e9d0ea4144a1ce"
+        }
+    }
+}

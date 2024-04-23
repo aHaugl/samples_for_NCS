@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	printf("Hello World with settings before app!\n");
+	printf("Hello World with custom data_storage before app and settings_storage at the end of the app!\n");
 
 	return 0;
 }

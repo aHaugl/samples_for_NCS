@@ -7,7 +7,7 @@ mcuboot:
   region: flash_primary
   size: 0xc000
 
-settings_storage:
+custom_data_storage:
   address: 0xc000
   end_address: 0xd000
   region: flash_primary

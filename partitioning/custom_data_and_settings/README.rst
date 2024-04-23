@@ -6,20 +6,23 @@ e.. zephyr:code-sample:: settings
 
 Overview
 ********
-This is a modification of the Zephyr settings sample that showcases how to set up so that the settings_partition is located between MCUboot and the application slots.
+This is a modification of the Zephyr settings sample that showcases how to set up so that the settings_partition is located at the end of 
+the flash area and including a custom NVS partition in between MCUboot and the application slots.
 
 
 .. code-block:: console
       flash_primary (0x100000 - 1024kB):
     +-------------------------------------------------+
     | 0x0: mcuboot (0xc000 - 48kB)                    |
-    | 0xc000: settings_storage (0x2000 - 8kB)         |
-    +---0xe000: mcuboot_primary (0x79000 - 484kB)-----+
-    | 0xe000: mcuboot_pad (0x200 - 512B)              |
-    +---0xe200: mcuboot_primary_app (0x78e00 - 483kB)-+
-    | 0xe200: app (0x78e00 - 483kB)                   |
+    | 0xc000: custom_data_storage (0x1000 - 4kB)      |
+    +---0xd000: mcuboot_primary (0x78000 - 480kB)-----+
+    | 0xd000: mcuboot_pad (0x200 - 512B)              |
+    +---0xd200: mcuboot_primary_app (0x77e00 - 479kB)-+
+    | 0xd200: app (0x77e00 - 479kB)                   |
     +-------------------------------------------------+
-    | 0x87000: mcuboot_secondary (0x79000 - 484kB)    |
+    | 0x85000: mcuboot_secondary (0x78000 - 480kB)    |
+    | 0xfd000: EMPTY_0 (0x1000 - 4kB)                 |
+    | 0xfe000: settings_storage (0x2000 - 8kB)        |
     +-------------------------------------------------+
 
       sram_primary (0x40000 - 256kB):

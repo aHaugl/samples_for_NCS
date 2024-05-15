@@ -1,8 +1,4 @@
-e.. zephyr:code-sample:: settings
-   :name: Settings API
-   :relevant-api: settings settings_rt settings_name_proc
-
-   Load and save configuration values using the settings API.
+Disclaimer: This sample does not work.
 
 Overview
 ********

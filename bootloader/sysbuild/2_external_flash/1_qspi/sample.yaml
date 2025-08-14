@@ -1,0 +1,3 @@
+sample:
+  description: Sample for unofficial NCS bootloader demo repo
+  name: Qspi external flash

@@ -1,0 +1,20 @@
+{
+    "format-version": 1,
+    "time": 1738064349,
+    "files": [
+        {
+            "type": "application",
+            "board": "nrf52840dk",
+            "soc": "nrf52840",
+            "load_address": 49664,
+            "image_index": "0",
+            "slot_index_primary": "1",
+            "slot_index_secondary": "2",
+            "version_MCUBOOT": "0.0.0+0",
+            "size": 22560,
+            "file": "1_serial_recovery.signed.bin",
+            "modtime": 1738064348
+        }
+    ],
+    "name": "1_serial_recovery"
+}

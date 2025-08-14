@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/CMakeFiles/1_serial_recovery"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/CMakeFiles/1_serial_recovery.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/CMakeFiles/1_serial_recovery-complete.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/1_serial_recovery-prefix/src/1_serial_recovery-stamp/1_serial_recovery-build.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/1_serial_recovery-prefix/src/1_serial_recovery-stamp/1_serial_recovery-configure.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/1_serial_recovery-prefix/src/1_serial_recovery-stamp/1_serial_recovery-download.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/1_serial_recovery-prefix/src/1_serial_recovery-stamp/1_serial_recovery-install.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/1_serial_recovery-prefix/src/1_serial_recovery-stamp/1_serial_recovery-mkdir.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/1_serial_recovery-prefix/src/1_serial_recovery-stamp/1_serial_recovery-patch.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/1_serial_recovery-prefix/src/1_serial_recovery-stamp/1_serial_recovery-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"1_serial_recovery"
+		],
+		"name" : "1_serial_recovery"
+	}
+}

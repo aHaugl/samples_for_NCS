@@ -1,0 +1,5 @@
+west:
+  command: C:\ncs\toolchains\b620d30767\opt\bin\Scripts\west build -d build_update
+    -b nrf52840dk/nrf52840 --sysbuild
+  topdir: C:\ncs\sdk
+  version: 1.2.0

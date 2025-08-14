@@ -1,0 +1,13 @@
+# Target labels
+ mcuboot
+# Source files and their labels
+C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/bootloader/CMakeFiles/mcuboot
+C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/bootloader/CMakeFiles/mcuboot.rule
+C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/bootloader/CMakeFiles/mcuboot-complete.rule
+C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-build.rule
+C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-configure.rule
+C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-download.rule
+C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-install.rule
+C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-mkdir.rule
+C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-patch.rule
+C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/_sysbuild/sysbuild/images/bootloader/mcuboot-prefix/src/mcuboot-stamp/mcuboot-update.rule

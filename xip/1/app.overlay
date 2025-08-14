@@ -1,0 +1,44 @@
+/* Add external flash */
+&mx25r64 {
+	status = "okay";
+};
+
+/ {
+	chosen {
+		nordic,pm-ext-flash = &mx25r64;
+	};
+};
+
+
+/* Step 5.1 - choose CDC ACM for mcumgr */
+/ {
+	chosen {
+		zephyr,uart-mcumgr = &cdc_acm_uart0;
+	};
+};
+
+/* Step 5.2 - Configure CDC ACM */
+&zephyr_udc0 {
+	cdc_acm_uart0: cdc_acm_uart0 {
+		compatible = "zephyr,cdc-acm-uart";
+	};
+};
+
+
+/ {
+	chosen {
+		nordic,pm-ext-flash = &mx25r64;
+	};
+};
+
+&flash0 {
+    partitions {
+        compatible = "fixed-partitions";
+        #address-cells = <1>;
+        #size-cells = <1>;
+        nrf70_fw_partition: partition@0 {
+            label = "nrf70_fw_partition";
+            reg = <0x00000000 DT_SIZE_K(128)>;
+        };
+    };
+};

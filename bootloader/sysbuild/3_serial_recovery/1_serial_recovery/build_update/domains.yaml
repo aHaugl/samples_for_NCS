@@ -1,0 +1,9 @@
+default: 1_serial_recovery
+build_dir: C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update
+domains:
+  - name: 1_serial_recovery
+    build_dir: C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/1_serial_recovery
+  - name: mcuboot
+    build_dir: C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/2_serial_recovery/1_serial_recovery/build_update/mcuboot
+flash_order:
+  - 1_serial_recovery

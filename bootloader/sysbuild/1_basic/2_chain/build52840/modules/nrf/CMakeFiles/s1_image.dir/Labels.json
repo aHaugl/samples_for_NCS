@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/modules/nrf/CMakeFiles/s1_image"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/modules/nrf/CMakeFiles/s1_image.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/modules/nrf/CMakeFiles/s1_image-complete.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/modules/nrf/s1_image-prefix/src/s1_image-stamp/s1_image-build.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/modules/nrf/s1_image-prefix/src/s1_image-stamp/s1_image-configure.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/modules/nrf/s1_image-prefix/src/s1_image-stamp/s1_image-download.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/modules/nrf/s1_image-prefix/src/s1_image-stamp/s1_image-install.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/modules/nrf/s1_image-prefix/src/s1_image-stamp/s1_image-mkdir.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/modules/nrf/s1_image-prefix/src/s1_image-stamp/s1_image-patch.rule"
+		},
+		{
+			"file" : "C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/modules/nrf/s1_image-prefix/src/s1_image-stamp/s1_image-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"s1_image"
+		],
+		"name" : "s1_image"
+	}
+}

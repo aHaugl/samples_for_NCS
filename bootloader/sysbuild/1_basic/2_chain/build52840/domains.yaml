@@ -1,0 +1,13 @@
+default: 2_chain
+build_dir: C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840
+domains:
+  - name: 2_chain
+    build_dir: C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/2_chain
+  - name: mcuboot
+    build_dir: C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/mcuboot
+  - name: b0
+    build_dir: C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/b0
+  - name: s1_image
+    build_dir: C:/ncs/my_projects/samples_for_NCS/bootloader/sysbuild/1_basic/2_chain/build52840/s1_image
+flash_order:
+  - 2_chain

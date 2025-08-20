@@ -57,7 +57,7 @@ Key generation, building and testing
 3. nrfutil erase --all 
 3. Provision the KMU with the derived public key for MCUboot with https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/kmu_provision.html#provisioning_keys_to_the_board.
 
-``west ncs-provision upload -k keys/my_ed25519_priv_key.pem --keyname UROT_PUBKEY -s nrf54l15`` and ``west ncs-provision upload -k keys/my_ed25519_priv_key.pem --keyname BL_PUBKEY -s nrf54l15`` for NSIB
+``west ncs-provision upload -k keys/ed25519_priv_key.pem --keyname UROT_PUBKEY -s nrf54l15`` and ``west ncs-provision upload -k keys/ed25519_priv_key.pem --keyname BL_PUBKEY -s nrf54l15`` for NSIB
 
 4. Flash the firmware and see that it's running
 5. Build once more with the same key with modifications. Update the versioning and change a print statement.

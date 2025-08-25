@@ -47,6 +47,7 @@ We want to use the Key Management Unit on the device to manage our keys. To do s
 Steps 
 **************************
 Key generation, building and testing
+
 1. Follow the steps at https://docs.nordicsemi.com/bundle/ncs-latest/page/mcuboot/imgtool.html to generate a key. In this demo we will use ed25519 to generate a key with 'imgtool keygen -k my_ed25519_priv_key.pem -t ed25519'. Have this key ready for later.
 2. Build the firmware for nrf54l15dk/nrf54l15/cpuapp
 3. nrfutil erase --all 

@@ -4,9 +4,11 @@ Sample with MCUBoot, BLE FOTA, KMU, custom private key, external flash for 54l15
 Overview
 ********
 
-This is a simple example that demonstrates how building a sample using sysbuild can automatically include MCUboot as the bootloader companion component, 
-NSIB as the first stage bootloader and use BLE as the transport for a FOTA update. The images are signed with a custom private key and
-public key is stored in the KMU.
+This is a simple example that demonstrates how building a sample using sysbuild can automatically include MCUboot as the bootloader companion component, NSIB as the first stage bootloader and use BLE as the transport for a FOTA update. The images are signed with a custom private key and public key is stored in the KMU.
+
+Requirement
+********
+This sample requires you to modify loader.c per the git diff.
 
 This sample:
 * This sample uses static parititioning. 

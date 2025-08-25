@@ -11,14 +11,13 @@ Requirement
 This sample requires you to modify loader.c per the git diff.
 
 This sample:
-* This sample uses static parititioning. 
-* In generall follow the docs at https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/index.html.
+1. This sample uses static parititioning. 
+2. In generall follow the docs at https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/index.html.
 
-In addition I've also followed:
-* This sample has added BLE FOTA support by following https://academy.nordicsemi.com/courses/nrf-connect-sdk-intermediate/lessons/lesson-9-bootloaders-and-dfu-fota/topic/exercise-5-fota-over-bluetooth-low-energy/ and https://github.com/nrfconnect/sdk-zephyr/tree/v3.7.99-ncs2/samples/subsys/mgmt/mcumgr/smp_svr 
-* This sample follows the steps from the academy pages for nRF54L15, both w.r.t FOTA and w.r.t adding an external flash as well as https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/fota_update.html 
-* This sample follows the steps from KMU provisioning https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/kmu_provision.html 
-* https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/dfu_config.html 
+In addition the sample also follows:
+1. This sample has added BLE FOTA support by following https://academy.nordicsemi.com/courses/nrf-connect-sdk-intermediate/lessons/lesson-9-bootloaders-and-dfu-fota/topic/exercise-5-fota-over-bluetooth-low-energy/ and https://github.com/nrfconnect/sdk-zephyr/tree/v3.7.99-ncs2/samples/subsys/mgmt/mcumgr/smp_svr 
+2. This sample follows the steps from the academy pages for nRF54L15, both w.r.t FOTA and w.r.t adding an external flash as well as https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/fota_update.html 
+3. This sample follows the steps from KMU provisioning https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/kmu_provision.html4. https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/dfu_config.html 
 
 The first prints are from b0, the second prints starting with  ``Booting Zephyr OS build`` is printed by MCUboot itself and the following lines are printed by the ``with_mcuboot`` sample.
 This sample also prints its flash location.

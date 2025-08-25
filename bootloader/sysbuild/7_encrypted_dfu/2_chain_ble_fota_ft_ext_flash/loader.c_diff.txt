@@ -1,0 +1,28 @@
+diff --git a/old_loader.c b/loader.c
+index fd51dd9..b1c0a34 100644
+--- a/old_loader.c
++++ b/loader.c
+@@ -1546,7 +1546,12 @@ boot_validated_swap_type(struct boot_loader_state *state,
+         sec_slot_touch(state);
+ 
+#ifdef PM_S1_ADDRESS
+-    {
++/* If we have encrypted app image enabled */
++#ifdef MCUBOOT_ENC_IMAGES
++    /* And the in the secondary is encrypted, assume that image is app image and skip s0/s1 checks */
++    if (!IS_ENCRYPTED(hdr))
++#endif
++    {
+#ifdef PM_CPUNET_B0N_ADDRESS
+         if(!(reset_addr >= PM_CPUNET_APP_ADDRESS && reset_addr < PM_CPUNET_APP_END_ADDRESS))
+#endif
+@@ -1593,6 +1598,7 @@ boot_validated_swap_type(struct boot_loader_state *state,
+                 owner_nsib[BOOT_CURR_IMG(state)] = true;
+             }
+         }
++        }
+#endif /* PM_S1_ADDRESS */
+         sec_slot_mark_assigned(state);
+     }
+ 
+ 

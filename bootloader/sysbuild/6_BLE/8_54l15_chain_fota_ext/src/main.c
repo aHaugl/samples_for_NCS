@@ -286,7 +286,7 @@ int main(void)
 	advertising_start();
 
 	for (;;) {
-		printk("Inside main loop after encrypted dfu\n");
+		printk("Inside main loop \n");
 		err = gpio_pin_toggle_dt(&led);
 		
 		if (err < 0) {

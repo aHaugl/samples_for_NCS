@@ -8,6 +8,9 @@ This is a simple example that demonstrates how building a sample using sysbuild 
 NSIB as the first stage bootloader and use BLE as the transport for a FOTA update. The images are signed with a custom private key and
 public key is stored in the KMU.
 
+> [!WARNING]
+> THE KEYS IN THIS REPOSITORY MUST NOT BE USED FOR ANY PRODUCTION AND ARE ONLY PRESENT AS AN ILLUSTRATION. ANY USE OF THE KEYS PRESENT ARE AT YOUR OWN RISK. ALWAYS GENERATE YOUR OWN PRIVATE KEYS AND KEEP THEM SAFE, KEEP THEM SECRET!
+
 This sample:
 * This sample uses static parititioning. 
 * In generall follow the docs at https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/index.html.

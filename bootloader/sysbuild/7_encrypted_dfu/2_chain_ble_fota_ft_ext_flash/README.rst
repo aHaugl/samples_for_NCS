@@ -6,6 +6,9 @@ Overview
 
 This is a simple example that demonstrates how building a sample using sysbuild can automatically include MCUboot as the bootloader companion component, NSIB as the first stage bootloader and use BLE as the transport for a FOTA update. The images are signed with a custom private key and public key is stored in the KMU.
 
+> [!WARNING]
+> THE KEYS IN THIS REPOSITORY MUST NOT BE USED FOR ANY PRODUCTION AND ARE ONLY PRESENT AS AN ILLUSTRATION. ANY USE OF THE KEYS PRESENT ARE AT YOUR OWN RISK. ALWAYS GENERATE YOUR OWN PRIVATE KEYS AND KEEP THEM SAFE, KEEP THEM SECRET!
+
 Requirement
 ********
 This sample requires you to modify loader.c per the git diff.

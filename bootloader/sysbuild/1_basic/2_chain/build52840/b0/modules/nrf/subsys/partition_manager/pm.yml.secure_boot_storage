@@ -1,5 +1,0 @@
-provision:
-  size: 0x1000
-  placement:
-    after: b0
-    align: {start: 0x1000}

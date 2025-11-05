@@ -1,4 +1,4 @@
-Sample with MCUBoot, BLE FOTA, KMU, custom private key, external flash for 54l15 and encrypted DFU of application
+Sample with MCUBoot, NSIB, KMU and custom private key. Uses UART for DFU transport
 ###################
 
 Overview
@@ -18,8 +18,7 @@ This sample:
 * In generall follow the docs at https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/index.html.
 
 In addition the sample also follows:
-* This sample has added BLE FOTA support by following https://academy.nordicsemi.com/courses/nrf-connect-sdk-intermediate/lessons/lesson-9-bootloaders-and-dfu-fota/topic/exercise-5-fota-over-bluetooth-low-energy/ and https://github.com/nrfconnect/sdk-zephyr/tree/v3.7.99-ncs2/samples/subsys/mgmt/mcumgr/smp_svr 
-* This sample follows the steps from the academy pages for nRF54L15, both w.r.t FOTA and w.r.t adding an external flash as well as https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/fota_update.html 
+* This sample follows the steps from the academy pages for nRF54L15
 * This sample follows the steps from KMU provisioning https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/kmu_provision.html4. https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/app_dev/device_guides/nrf54l/dfu_config.html 
 
 The first prints are from b0, the second prints starting with  ``Booting Zephyr OS build`` is printed by MCUboot itself and the following lines are printed by the ``with_mcuboot`` sample.
@@ -39,18 +38,10 @@ enables the bootloader when building with sysbuild.
 
 The ``SB_CONFIG_SECURE_BOOT_APPCORE=y`` enables the first stage immutable bootloader
 
-For flexibility with app size we also place the mcuboot secondary application slot on the external
-flash after setting it up as shown in https://academy.nordicsemi.com/courses/nrf-connect-sdk-intermediate/lessons/lesson-9-bootloaders-and-dfu-fota/topic/exercise-3-dfu-with-external-flash/
-``SB_CONFIG_PM_EXTERNAL_FLASH_MCUBOOT_SECONDARY=y`` & ``SB_CONFIG_PM_OVERRIDE_EXTERNAL_DRIVER_CHECK=y``-
+If you want external flash, see the samples in the bootloader repo with SPI configuration for the nRF54L15
 
 We want to use the Key Management Unit on the device to manage our keys. To do so enable ``SB_CONFIG_MCUBOOT_SIGNATURE_USING_KMU=y``per the mentioned docs and 
 ``SB_CONFIG_BOOT_SIGNATURE_TYPE_ED25519=y`` & ``SB_CONFIG_BOOT_SIGNATURE_KEY_FILE`` is to specify the key type and which private key to use for MCUboot, and
-
-``SB_CONFIG_BOOT_ENCRYPTION=y`` & ``SB_CONFIG_BOOT_ENCRYPTION_KEY_FILE="\${APP_DIR}/keys/x255519_enc_priv.pem"`` is to specify that we want to generate an encrypted dfu bin, 
-with the specified key per the encrypted DFU docs for 54l15.
-
-``SB_CONFIG_BOOT_ENCRYPTION=y`` & ``SB_CONFIG_BOOT_ENCRYPTION_KEY_FILE="\${APP_DIR}/keys/x255519_enc_priv.pem"`` is to specify that we want to generate an encrypted dfu bin, 
-with the specified key per the encrypted DFU docs for 54l15.
 
 Steps 
 **************************
@@ -65,5 +56,5 @@ Key generation, building and testing
 
 4. Flash the firmware and see that it's running
 5. Build once more with the same key with modifications. Update the versioning and change a print statement.
-6. Perform an update of the app by uploading build/<your_app>/zephyr/zephyr.signed.encrypted.bin with by following the steps in https://academy.nordicsemi.com/courses/nrf-connect-sdk-intermediate/lessons/lesson-9-bootloaders-and-dfu-fota/topic/exercise-5-fota-over-bluetooth-low-energy/ 
+6. Perform an update over UART per instructions in https://academy.nordicsemi.com/courses/nrf-connect-sdk-intermediate/lessons/lesson-9-bootloaders-and-dfu-fota/topic/exercise-1-dfu-over-uart/ 
 

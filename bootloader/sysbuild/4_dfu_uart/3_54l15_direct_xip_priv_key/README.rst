@@ -1,4 +1,4 @@
-Sample with MCUBoot, NSIB, KMU and custom private key. Uses UART for DFU transport
+*WIP boots, but DFU doesn't work* Sample with MCUBoot, NSIB, KMU and custom private key. Uses UART for DFU transport 
 ###################
 
 Overview
